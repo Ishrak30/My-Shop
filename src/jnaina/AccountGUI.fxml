@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jnaina.AccountGUIController">
+   <children>
+      <ImageView fitHeight="433.0" fitWidth="797.0" layoutY="8.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@COVER.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="647.0" layoutY="14.0" prefHeight="39.0" prefWidth="118.0" text="USER LOGIN" textFill="#00b1c4">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="177.0" layoutY="135.0" prefHeight="50.0" prefWidth="130.0" text="USER NAME :" textAlignment="CENTER" textFill="#9b0bbf" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="183.0" layoutY="221.0" prefHeight="50.0" prefWidth="118.0" text="PASSWORD :" textAlignment="CENTER" textFill="#9b0bbf" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="USERID" layoutX="324.0" layoutY="148.0" prefHeight="25.0" prefWidth="276.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="PASSWORD" layoutX="324.0" layoutY="234.0" prefHeight="25.0" prefWidth="276.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Button layoutX="425.0" layoutY="286.0" mnemonicParsing="false" onAction="#loginbuttonpushed" prefHeight="25.0" prefWidth="81.0" text="Log In">
+         <effect>
+            <InnerShadow color="#05f0ca">
+               <input>
+                  <DropShadow />
+               </input>
+            </InnerShadow>
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="585.0" layoutY="289.0" mnemonicParsing="false" onAction="#createaccount" prefHeight="30.0" prefWidth="159.0" text="Create Account">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#07d3f5" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Label fx:id="lbl" alignment="CENTER" layoutX="31.0" layoutY="331.0" prefHeight="39.0" prefWidth="339.0" textFill="#e40707">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="21.0" prefHeight="50.0" prefWidth="298.0" text="NSUER's Merchandise">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <textFill>
+            <LinearGradient endX="0.49523809523809526" endY="0.6476190476190476" startX="0.5095238095238095" startY="0.3476190476190476">
+               <stops>
+                  <Stop color="#021de8" />
+                  <Stop color="#0220e3" offset="0.3024054982817869" />
+                  <Stop color="#f50c0c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
